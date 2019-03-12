@@ -10,8 +10,18 @@ public class Kucharz implements IKucharz {
     }
 
     @Override
+    public void pobierzSkladnikiZMagazynu(int liczbaSkladnikow) {
+        System.out.println("Kucharz pobiera " + liczbaSkladnikow + " skladnikow");
+    }
+
+    @Override
     public void przygotujPizze() {
         System.out.println("Kucharz przygotowuje pizze");
+    }
+
+    @Override
+    public void przygotujPizze(int idPizzy) {
+        System.out.println("Kucharz przygotowuje pizze o id " + idPizzy);
     }
 
     @Override
