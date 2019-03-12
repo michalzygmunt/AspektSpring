@@ -18,7 +18,7 @@ public class Komunikacja {
     @Pointcut("within(pl.javasolutions.impl.Kucharz)")
     public void pointcutWithin(){}
 
-    @Before("pointcutInt(arg)")
+    @Before("pointcutWithin() && pointcutInt(arg)")
     public void porada(int arg){
         System.out.println("PORADA " + arg);
     }

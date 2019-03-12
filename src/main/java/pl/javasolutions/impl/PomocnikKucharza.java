@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import pl.javasolutions.api.IKucharz;
 
+@Deprecated
 public class PomocnikKucharza implements IKucharz {
 
     @Autowired
